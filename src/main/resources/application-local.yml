@@ -1,0 +1,22 @@
+server:
+  port: 1002
+  context-path: /search-service
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: search-service
+
+### elasticsearch config
+elasticsearch:
+  clusterName: elasticSearch #集群名称
+  ip: 127.0.0.1
+  port: 9300
+  poolSize: 5
+  userName: elastic
+  passWord: changeme
+
+#logback日志
+logging:
+  config: classpath:config/logback/logback-local.xml

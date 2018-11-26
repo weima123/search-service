@@ -1,0 +1,12 @@
+server:
+  port: 1002
+  context-path: /consumer
+spring:
+  profiles:
+    active: local
+  application:
+    name: consumer
+
+##logback日志
+logging:
+  config: classpath:config/logback/logback-sit.xml
